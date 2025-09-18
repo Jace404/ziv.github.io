@@ -1,46 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar Example</title>
+  <title>Home | Jesse</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <!-- Logo -->
-      <div class="logo">
-        
-        <span>The Zayin Vav</span>
-      </div>
-
-      <!-- Navigation Links -->
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-
-      <!-- Right Section -->
-      <div class="nav-right">
-        <span class="phone">📞 +233 55 718 3989</span>
-        <a href="#" class="signin">Sign In</a>
-        <a href="#" class="contact-btn">Contact Us</a>
-      </div>
-    </nav>
-  </header>
-</body>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Landing Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -51,13 +16,13 @@
 
     body {
       background: url('https://upload.wikimedia.org/wikipedia/commons/3/3a/Black_Star_Square_Accra.jpg') no-repeat center center/cover;
-      height: 100vh;
+      min-height: 100vh;
       color: white;
     }
 
     .overlay {
       background: rgba(0, 100, 100, 0.6);
-      height: 100%;
+      min-height: 100vh;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -94,39 +59,74 @@
     .btn:hover {
       background: #0dcaf0;
     }
+
+    header, nav, main, footer {
+      padding: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+   /* Keep default card style for others */
+.card {
+  background: rgba(255, 255, 255, 0.6);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Make Who I Am, Current Projects, and Let’s Connect white */
+.card:nth-of-type(1),
+.card:nth-of-type(2),
+.card:nth-of-type(5) {
+  background: #ffffff;
+  color: #000; /* So text is readable */
+}
+
+
+    .highlight {
+      border: 2px solid #3dd5f3;
+    }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>Jesse Ziv Nyumutei</h1> <!-- Replace with your name -->
-    <h2>from Ghana</h2> <!-- Replace with where you are from -->
-    <a href="#" class="btn">LET'S EXPLORE</a>
-  </div>
-</body>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Jesse</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Header -->
+  <!-- Navbar -->
   <header>
-    <h1>Welcome to My Space</h1>
-    <p>Hi, I’m Jesse — passionate about faith, technology, and leadership.</p>
+    <nav class="navbar">
+      <div class="logo">
+        <span>The Zayin Vav</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="nav-right">
+        <span class="phone">📞 +233 55 718 3989</span>
+        <a href="#" class="signin">Sign In</a>
+        <a href="#" class="contact-btn">Contact Us</a>
+      </div>
+    </nav>
   </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <!-- Hero Section -->
+  <div class="overlay">
+    <h1>Jesse Ziv Nyumutei</h1>
+    <h2>from Ghana</h2>
+    <a href="#" class="btn">LET'S EXPLORE</a>
+  </div>
 
   <!-- Main Content -->
   <main>
+    <header>
+      <h1>Welcome to My Space</h1>
+      <p>Hi, I’m Jesse — passionate about faith, technology, and leadership.</p>
+    </header>
+
     <!-- Intro Card -->
     <section class="card">
       <h2>Who I Am</h2>
@@ -142,30 +142,6 @@
       <a href="about.html" class="btn">Learn More</a>
     </section>
 
-    <!-- Vision Card -->
-     <section class="card">
-      <h2>Current Projects</h2>
-      <ul>
-        <li><strong>Faithware Podcast</strong> — exploring the intersection of technology and faith.</li>
-        <li><strong>The New Age of Kingdom Trailblazers</strong> — a book on leadership, faith, and innovation.</li>
-        <li><strong>Youth Leadership Mentorship</strong> — guiding young people to discover their voice.</li>
-      </ul>
-      <p>
-        Each project is a step toward creating meaningful change.
-      </p>
-    </section>
-    <section class="card highlight">
-      <h2>My Vision</h2>
-      <p>
-        I dream of a generation that merges <strong>creativity, faith, and technology</strong>  
-        to build solutions that matter.  
-      </p>
-      <p>
-        My heart is to see young leaders live authentically, innovate courageously,  
-        and lead with purpose.  
-      </p>
-    </section>
-
     <!-- Projects Card -->
     <section class="card">
       <h2>Current Projects</h2>
@@ -176,6 +152,19 @@
       </ul>
       <p>
         Each project is a step toward creating meaningful change.
+      </p>
+    </section>
+
+    <!-- Vision Card -->
+    <section class="card highlight">
+      <h2>My Vision</h2>
+      <p>
+        I dream of a generation that merges <strong>creativity, faith, and technology</strong>  
+        to build solutions that matter.  
+      </p>
+      <p>
+        My heart is to see young leaders live authentically, innovate courageously,  
+        and lead with purpose.  
       </p>
     </section>
 
