@@ -1,5 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        
+        <span>The Zayin Vav</span>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+      <!-- Right Section -->
+      <div class="nav-right">
+        <span class="phone">📞 +233 55 718 3989</span>
+        <a href="#" class="signin">Sign In</a>
+        <a href="#" class="contact-btn">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+</body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/3/3a/Black_Star_Square_Accra.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+    }
+
+    .overlay {
+      background: rgba(0, 100, 100, 0.6);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #3dd5f3;
+      color: #000;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #0dcaf0;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Jesse Ziv Nyumutei</h1> <!-- Replace with your name -->
+    <h2>from Ghana</h2> <!-- Replace with where you are from -->
+    <a href="#" class="btn">LET'S EXPLORE</a>
+  </div>
+</body>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +113,7 @@
 <body>
   <!-- Header -->
   <header>
-    <h1>Welcome to My Website</h1>
+    <h1>Welcome to My Space</h1>
     <p>Hi, I’m Jesse — passionate about faith, technology, and leadership.</p>
   </header>
 
@@ -23,80 +127,76 @@
 
   <!-- Main Content -->
   <main>
-    <!-- Intro -->
-    <section>
-      <h2>Quick Intro</h2>
+    <!-- Intro Card -->
+    <section class="card">
+      <h2>Who I Am</h2>
       <p>
         This site is where I share my journey, projects, and ideas.  
-        I believe in the power of innovation and faith to shape the future.  
-        Here, you’ll find my thoughts, my work, and hopefully, some inspiration for your own journey.
+        I believe in the power of <strong>faith</strong> and <strong>innovation</strong> 
+        to shape a meaningful future.
       </p>
       <p>
-        I don’t see faith and technology as opposites. Instead, I believe 
-        they can walk hand in hand, guiding us toward building a future that is both 
-        meaningful and impactful. This website is my little corner of the internet where 
-        those ideas take shape.
+        For me, technology and spirituality are not opposites — 
+        they’re partners in building bridges of impact. 
       </p>
-      <a href="about.html" class="btn">Learn More About Me</a>
+      <a href="about.html" class="btn">Learn More</a>
     </section>
 
-    <!-- Vision -->
-    <section>
-      <h2>My Vision</h2>
-      <p>
-        I dream of a generation that is bold, creative, and unafraid to merge faith 
-        with technology to bring lasting change. Too often, the two are separated — 
-        but I believe the future belongs to those who can see the sacred even in 
-        what looks ordinary, and who can use tools of today to build bridges for tomorrow.
-      </p>
-      <p>
-        My vision is to inspire people, especially young leaders, to live 
-        authentically, innovate courageously, and lead with purpose. 
-      </p>
-    </section>
-
-    <!-- Projects -->
-    <section>
-      <h2>Projects I’m Working On</h2>
-      <p>
-        Over the years, I’ve worked on a variety of creative and leadership projects. 
-        Some of them include:
-      </p>
+    <!-- Vision Card -->
+     <section class="card">
+      <h2>Current Projects</h2>
       <ul>
         <li><strong>Faithware Podcast</strong> — exploring the intersection of technology and faith.</li>
-        <li><strong>The New Age of Kingdom Trailblazers</strong> — a book I’m writing about leadership, faith, and innovation.</li>
-        <li><strong>Youth Leadership Mentorship</strong> — helping young people discover their voice and potential.</li>
+        <li><strong>The New Age of Kingdom Trailblazers</strong> — a book on leadership, faith, and innovation.</li>
+        <li><strong>Youth Leadership Mentorship</strong> — guiding young people to discover their voice.</li>
       </ul>
       <p>
-        I believe each of these projects is a stepping stone toward creating meaningful impact.
+        Each project is a step toward creating meaningful change.
+      </p>
+    </section>
+    <section class="card highlight">
+      <h2>My Vision</h2>
+      <p>
+        I dream of a generation that merges <strong>creativity, faith, and technology</strong>  
+        to build solutions that matter.  
+      </p>
+      <p>
+        My heart is to see young leaders live authentically, innovate courageously,  
+        and lead with purpose.  
       </p>
     </section>
 
-    <!-- Blog / Thoughts -->
-    <section>
+    <!-- Projects Card -->
+    <section class="card">
+      <h2>Current Projects</h2>
+      <ul>
+        <li><strong>Faithware Podcast</strong> — exploring the intersection of technology and faith.</li>
+        <li><strong>The New Age of Kingdom Trailblazers</strong> — a book on leadership, faith, and innovation.</li>
+        <li><strong>Youth Leadership Mentorship</strong> — guiding young people to discover their voice.</li>
+      </ul>
+      <p>
+        Each project is a step toward creating meaningful change.
+      </p>
+    </section>
+
+    <!-- Thoughts Card -->
+    <section class="card highlight">
       <h2>Latest Thoughts</h2>
       <p>
-        I regularly write about faith, technology, and leadership. Sometimes they come 
-        as structured essays, other times as reflections from my personal journey.  
-        Here are some themes I explore:
+        I write about faith, leadership, and technology. Some themes I explore:
       </p>
       <ul>
         <li>The role of creativity in building stronger communities</li>
         <li>How faith can guide our use of digital tools</li>
         <li>Why leadership is more about service than position</li>
       </ul>
-      <p>
-        Stay tuned — I’ll be sharing more soon on my blog page.
-      </p>
     </section>
 
     <!-- Call to Action -->
-    <section>
+    <section class="card">
       <h2>Let’s Connect</h2>
       <p>
-        I love connecting with people who share similar passions — whether that’s 
-        technology, faith, leadership, or just the desire to make a difference.  
-        You can reach me anytime on:
+        I’d love to connect with people who share a vision for impact. Reach me on:
       </p>
       <ul>
         <li>Instagram: <a href="https://instagram.com/the.zayinvav" target="_blank">@the.zayinvav</a></li>
